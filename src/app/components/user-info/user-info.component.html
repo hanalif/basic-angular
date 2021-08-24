@@ -1,0 +1,10 @@
+<div class="user-info-container">
+    <h1>{{user.name}}</h1>
+    <ul>
+        <li *ngFor="let tvShow of user.favTvShows">
+            <p>{{tvShow}}</p>
+        </li>
+    </ul>
+    <button (click)="onGoBack()">Back</button>
+
+</div>

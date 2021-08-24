@@ -1,0 +1,5 @@
+<div class="users-list">
+    <div *ngFor="let user of users; trackBy:trackUser" class="user-preview-continer">
+        <app-user-preview [user]="user" (deleteUser)="onDeleteUser(user._id)" (click)="onSelectUser(user._id)"></app-user-preview>
+    </div>
+</div>
